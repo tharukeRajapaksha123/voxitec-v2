@@ -1,0 +1,30 @@
+.foot{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.page-footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    font-family: var(--font-main);
+    border-top: 1px solid rgba(255, 255, 255, 0.651);
+    height: 10vh;
+    width: 80%;
+    padding: 24px 0px;
+}
+.footer-items{
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer-items>span{
+    margin-right: 5px;
+}
+.logos{
+    width: 21vw;
+}

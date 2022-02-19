@@ -1,0 +1,129 @@
+.home-body{
+    width: 100%;
+    display: flex;
+    flex: 1;
+    padding: 1rem 6rem;
+}
+
+.section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.image-container{
+    width: 95%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+.home-image{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.title{
+    font-size: 55px;
+    text-align: start;
+    font-family: var(--font-main);
+}
+
+.description{
+    text-align: start;
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.get-started-button{
+    background-color: #00C1FF;
+    width: 130px;
+    height: 55px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.get-started-button h3{
+    color: white;
+    text-align: center;
+    font-weight: normal;
+}
+
+.wrapper{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width : 2000px) {
+    .home-body{
+        padding: 1.5rem 20rem;
+    }
+    .small-screen-image{
+        display: none;
+    }
+    .description{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width : 1366px) {
+    .home-body{
+        padding: 1rem 10rem;
+    }
+    .small-screen-image{
+        display: none;
+    }
+    .title{
+        font-size: 35px;
+    }
+    .description{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width : 650px) {
+    .home-body{
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 3rem;
+    }
+    .wrapper{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+    }
+    .title{
+        text-align: center;
+        font-size: 28px;
+    }
+    .description{
+        text-align: center;
+        font-size: 15px;
+    }
+    .get-started-button{
+        display: none;
+    }
+    .image-container{
+        display: none;
+    }
+    .small-screen-image{
+        display: flex;
+        width: 100%;
+        height: 150px;
+        margin: 2rem 0;
+    }
+}
