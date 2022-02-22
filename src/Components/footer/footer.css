@@ -2,6 +2,7 @@
     display: flex;
     width: 100%;
     justify-content: center;
+  
 }
 .page-footer{
     display: flex;
@@ -12,7 +13,7 @@
     margin-top: 12px;
     font-family: var(--font-main);
     border-top: 1px solid rgba(255, 255, 255, 0.651);
-    height: 10vh;
+    height: auto;
     width: 80%;
     padding: 24px 0px;
 }
@@ -27,4 +28,14 @@
 }
 .logos{
     width: 21vw;
+}
+@media screen and (max-width:950px) {
+    .page-footer{
+        flex-direction: column;
+    }
+    .footer-items{
+        margin-top: 24px;
+    }
+    
+
 }

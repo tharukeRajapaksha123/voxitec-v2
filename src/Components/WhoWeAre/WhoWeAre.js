@@ -14,7 +14,7 @@ function WhoWeAre({theme}) {
                 <p>{data.who_are_we_description}</p>
                 <p>{data.who_are_we_description_2}</p>
             </div>
-            <div className='image-container'>
+            <div className='image-container-hw'>
                 <Fade right>
                     <div className='who-we-are-image-wrapper'>
                         <img src={images.descriptionimage} alt="description" className='who-we-are-image'/>
@@ -41,6 +41,13 @@ function WhoWeAre({theme}) {
                 </div>
             </Fade>
         </div>
+        <div className='image-container-hw-sm'>
+                <Fade right>
+                    <div className='who-we-are-image-wrapper'>
+                        <img src={images.descriptionimage} alt="description" className='who-we-are-image'/>
+                    </div>
+                </Fade>
+            </div>
         {/* <div className='small-screen-bottom-who-are-we-image-wrapper'>
             <img src={images.descriptionimage} alt="description" className='who-we-are-image'/>
         </div> */}

@@ -1,5 +1,5 @@
 .map-container{
-    height: 100vh;
+    height: auto;
     width: 100%;
     background-image: url("../../assets/world-map\ 3.png");
     background-size: contain;
@@ -61,4 +61,21 @@
     flex-direction: row;
     align-items: center;
     padding: 8px 0px;
+}
+@media screen and (max-width:850px) {
+    .clock-container-map{
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 8vh;
+    }
+    .map-container{
+        background-image: none;
+
+    }
+    .col:first-child{
+       display: none;
+    }
+    .col:last-child{
+       display: none;
+    }
 }

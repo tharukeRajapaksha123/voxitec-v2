@@ -13,9 +13,9 @@ function Blog({theme}) {
             <BlogCard blog_details = {blog_data[1]}/>
             <BlogCard blog_details = {blog_data[2]}/>
         </div>
-        <div className='blog-card-container-small-screen'>
+        {/* <div className='blog-card-container-small-screen'>
             <BlogCard  blog_details = {blog_data[0]}/>
-        </div>
+        </div> */}
         <div className='view-more-button-container'>
             <div className="blog-view-more-button">
                 <p>View More</p>
